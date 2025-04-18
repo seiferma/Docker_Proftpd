@@ -8,5 +8,5 @@ ENTRYPOINT ["/entrypoint.sh"]
 CMD ["default"]
 
 ARG VERSION
-RUN apk add --no-cache "proftpd~${VERSION}" "proftpd-mod_tls~${VERSION}" "proftpd-utils~${VERSION}" libcap-setcap && \
+RUN apk add --no-cache "proftpd=${VERSION}" "proftpd-mod_tls=${VERSION}" "proftpd-utils=${VERSION}" libcap-setcap && \
     setcap CAP_SYS_CHROOT=+eip /usr/sbin/proftpd
