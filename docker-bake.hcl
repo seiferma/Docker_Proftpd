@@ -1,4 +1,5 @@
 variable "VERSION" {
+  # renovate: datasource=repology depName=alpine_3_21/proftpd
   default = "1.3"
 }
 
