@@ -1,6 +1,6 @@
 variable "VERSION" {
-  # renovate: datasource=repology depName=alpine_3_21/proftpd
-  default = "1.3.8d-r0"
+  # renovate: datasource=repology depName=alpine_3_22/proftpd
+  default = "1.3.9-r1"
 }
 
 group "default" {
